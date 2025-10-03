@@ -4,7 +4,7 @@ Um simples projeto base para aprender Jest Testing com uma API de biblioteca!
 ## Passo a passo
 
 ### 1. Setup Inicial
-Abra a aplicação em sua IDE preferida (recomendo o VSCode).
+Abra a aplicação em seu VSCode.
 
 Execute o seguinte comando no terminal para instalar todas as dependências:
 ```bash
@@ -333,4 +333,5 @@ http://localhost:3000/           - Página inicial
 http://localhost:3000/cadastro   - Página de cadastro
 http://localhost:3000/biblioteca - Página da biblioteca
 http://localhost:3000/api/livros - API JSON dos livros
+
 ```

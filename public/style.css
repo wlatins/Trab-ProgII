@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.quicksand-font {
+  font-family: 'Quicksand', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html, body{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    --dark-gray: rgb(9, 12, 15);
+    --middle-gray: rgb(30, 44, 53);
+    --light-gray: rgb(64, 74, 77);
+    --white: rgb(181, 223, 219);
+    --dark-blue: rgb(7, 35, 156);
+}
+
+body{
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    margin: 0 0 20px 0;
+    border-radius: 0 0 50px 50px;
+    color: var(--white);
+    background-color: var(--dark-gray);
+    width: 50%;
+    padding: 10px 30px;
+}
+
+#livrosContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 462.5px; /* 425px */
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+    width: 95vw;
+}
+
+.livro_espaco {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 25px 25px 12.5px 12.5px 37.5px;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--middle-gray);
+    border-radius: 35px;
+}
+
+.livro{
+    background-color: var(--dark-gray);
+    border-radius: 25px;
+    grid-area: 1 / 1 / 5 / 2;
+}
+
+.livro_info {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--white);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 6fr 1fr 1fr;
+    grid-area: 1 / 1 / 2 / 2;
+    box-sizing: border-box;
+    padding: 12.5px;
+}
+
+.livro_titulo{
+    font-weight: 700;
+    font-size: 22.5px;
+    margin: 0;
+    text-align: center;
+}
+
+.detalhe_1{
+    box-sizing: border-box;
+    grid-area: 2 / 1 / 4 / 2;
+    background-color: var(--white);
+    margin: 0px 12.5px;
+    border-radius: 18.75px 0 18.75px 18.75px;
+}
+
+.detalhe_2{
+    display: flex;
+    background-color: var(--dark-blue);
+    grid-area: 3 / 1 / 6 / 2;
+    width: 35px;
+    margin-left: 35px;
+}
+
+.livro_exemplares{
+    text-justify: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    height: 25px;
+    align-self: center;
+    background-color: var(--dark-gray);
+    border-radius: 12.5px;
+    padding: 4px 22.5px 0 22.5px;
+    margin: 0 12.5px 0 12.5px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: var(--middle-gray);
+    border-radius: 10px 0 0 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--dark-gray);
+    border-radius: 10px 0 0 10px;
+    background-clip: padding-box;
+}
+
+.link_button {
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.link_button.fixed {
+    position: fixed;
+    top: 15px;
+    left: 60px;
+    z-index: 1000;
+}
+
+.link_button:hover {
+    background: var(--middle-gray);
+}
+
+#cadastroForm {
+    display: grid;
+    width: 75vw;
+    height: 65vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 2fr 2fr 3fr 1.5fr;
+    margin: auto;
+    background-color: var(--middle-gray);
+    border-radius: 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+#cadastroForm *{
+    background-color: var(--dark-gray);
+    height: 100%;
+}
+
+#cadastroForm label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+#cadastroForm input{
+    background: var(--dark-gray);
+    color: var(--white);
+    height: 48px;
+    border-radius: 0 20px 20px 0;
+    box-sizing: border-box;
+    border: none;
+    padding: 0 15px;
+    height: 100%;
+    font-size: 20px;
+    width: 100%;
+}
+
+#cadastroForm label:nth-child(odd){
+    grid-column: 1 / 2;
+    border-radius: 20px 0 0 20px;
+}
+
+#cadastroForm button{
+    grid-area: 4 / 1 / 5 / 3;
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    width: 60%;
+}
+
+#cadastroForm button:hover{
+    background: var(--light-gray);
+    cursor: pointer;
+}
+
+.livro-cadastrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 5 / 1 / 6 / 3;
+    border-radius: 20px;
+    width: 45%;
+    color: var(--dark-blue);
+    text-justify: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#cadastroForm input:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.botoes_home {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    font-size: 30px;
+}

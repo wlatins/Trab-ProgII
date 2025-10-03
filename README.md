@@ -11,7 +11,7 @@ Execute o seguinte comando no terminal para instalar todas as dependências:
 npm install
 ```
 
-Verifique as configurações o do `.env`:
+Verifique as configurações do `.env`:
 ```env
 MONGO_URI=suaStringDeConexãoMongoDB
 ```
@@ -196,7 +196,7 @@ API direta:
 Você também pode acessar `http://localhost:3000/api/livros` para ver os dados em JSON puro.
 
 ### 8. Expandindo os Testes
-Agora que você entendeu o básico, pode criar mais testes! Aqui estão algumas ideias:
+Agora que você entendeu o básico, pode criar mais testes:
 
 ```javascript
 // TODO: Adicione estes testes no services/tests/bookRegister.spec.js!
@@ -333,4 +333,5 @@ http://localhost:3000/biblioteca - Página da biblioteca
 http://localhost:3000/api/livros - API JSON dos livros
 
 ```
+
 

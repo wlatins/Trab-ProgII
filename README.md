@@ -11,13 +11,13 @@ Execute o seguinte comando no terminal para instalar todas as dependências:
 npm install
 ```
 
-Dentro do `.env` insira suas configurações de ambiente:
+Verifique as configurações o do `.env`:
 ```env
 MONGO_URI=suaStringDeConexãoMongoDB
 ```
 
 ### 2. MongoDB
-Crie um banco de dados do MongoDB localmente ou utilize o Atlas (mais fácil!).
+Crie um banco de dados do MongoDB localmente.
 
 Após criar seu banco, pegue o link de conexão e insira na seguinte linha do `.env`:
 ```env
@@ -117,8 +117,6 @@ Com o testes descomentados, execute:
 ```bash
 npm test
 ```
-
-Todos nossos testes irâo passar, no entanto apenas um irá falhar por causa de quantos exemplares existem (5) e quantos são esperados (4).
 
 ### 6. Descomentando as Rotas da API
 Agora vamos implementar as rotas da API passo a passo! No arquivo `app.js`, você vai encontrar algumas rotas comentadas que precisam ser ativadas.
@@ -335,3 +333,4 @@ http://localhost:3000/biblioteca - Página da biblioteca
 http://localhost:3000/api/livros - API JSON dos livros
 
 ```
+
